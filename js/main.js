@@ -26,12 +26,12 @@ var configs = (function () {
         rmdir_help: "Remove directory, this command will only work if the folders are empty.",
         touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
         sudo_help: "Execute a command as the superuser.",
-        welcome: "Have you received the SPICE? A great gift has been bestowed upon you. As an early SPICE recipient, One should simply ENJOY the SPICE.  Bask in its glory. Now type HELP on your keyboard.",
+        welcome: "Have you received the SPICE? A great gift has been bestowed upon you. As an early SPICE recipient, One should simply ENJOY the SPICE.  Bask in its glory. Now type help on your keyboard.",
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message.txt",
         invalid_command_message: "<value>: command not found.",
         reboot_message: "Preparing to reboot...\n\n3...\n\n2...\n\n1...\n\nRebooting...\n\n",
-        permission_denied_message: "Unable to '<value>', permission denied.",
+        permission_denied_message: "Unable to '<value>', permission denied. You must need to earn more SPICE first.",
         sudo_message: "Unable to sudo using a web client.",
         usage: "Usage",
         file: "file",
@@ -67,11 +67,11 @@ var files = (function () {
         }
     };
     Singleton.defaultOptions = {
-        "about.txt": "This website was made using only pure JavaScript with no extra libraries.\nI made it dynamic so anyone can use it, just download it from GitHub and change the config text according to your needs.\nIf you manage to find any bugs or security issues feel free to email me: luisbraganca@protonmail.com",
-        "getting_started.txt": "First, go to js/main.js and replace all the text on both singleton vars.\n- configs: All the text used on the website.\n- files: All the fake files used on the website. These files are also used to be listed on the sidenav.\nAlso please notice if a file content is a raw URL, when clicked/concatenated it will be opened on a new tab.\nDon't forget also to:\n- Change the page title on the index.html file\n- Change the website color on the css/main.css\n- Change the images located at the img folder. The suggested sizes are 150x150 for the avatar and 32x32/16x16 for the favicon.",
-        "contact.txt": "mail@example.com",
-        "social_network_1.txt": "https://www.socialite.com/username/",
-        "social_network_2.txt": "https://example.com/profile/9382/"
+        "about.txt": "SPICE is a tipping token created for people to easily reward other people for spicy content created on networks such as Telegram and Twitter via the usage of a easily added chatbot.The use of SPICE captures the content being tipped and publishes it to a user-generated stream called SpiceFeed (Privacy Options Available to Admins). SPICE is designed to make the internet more fun, if it doesn't then it's doing it wrong!",
+        "getting_started.txt": "To earn SPICE you must be gifted it by being inflammatory or spicy in other means. To SPICE up your Telegram channel you can simply add the SPICE BOT. On Twitter you can gift other people SPICE by typing say 1000 @spicetokens. For more information check out the other files. ",
+        "wallets.txt": "Badget Wallet, Electron SLP and Crescent Cash",
+        "tipping_bot.txt": "SPICE's tipping bot is easily added on Telegram nu a simple invite. On Twitter the bot can be called anytime by @spicetokens. The boy allows anyone to store, tip and withdraw SPICE easily to SLP wallets. To find out how message the bots : )",
+        "spice_feed.txt": "SpiceFeed offers an overview of the hottest content based on the value of the tip given. Users are rewarded SPICE for sharing when other users tip them. The SPICE must flow."
     };
     return {
         getInstance: function (options) {
