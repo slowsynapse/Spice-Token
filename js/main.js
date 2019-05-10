@@ -45,7 +45,7 @@ var configs = (function () {
         host: "spice.network",
         user: "guest",
         is_root: false,
-        type_delay: 20
+        type_delay: 10
     };
     return {
         getInstance: function (options) {
